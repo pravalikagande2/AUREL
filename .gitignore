@@ -12,3 +12,6 @@ kaggle.json
 
 # Ignore datasets or large data directories
 fashion-dataset/
+# .gitignore
+.env
+
