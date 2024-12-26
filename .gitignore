@@ -1,0 +1,14 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore sensitive files like Kaggle API keys
+kaggle.json
+
+# Ignore datasets or large data directories
+fashion-dataset/
