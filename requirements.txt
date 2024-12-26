@@ -60,6 +60,8 @@ numpy==1.26.4
     #   faiss-cpu
     #   pandas
     #   pyarrow
+opencv-python==4.8.0.76
+
 packaging==24.1
     # via
     #   datasets
