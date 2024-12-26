@@ -26,7 +26,7 @@ dill==0.3.8
     # via
     #   datasets
     #   multiprocess
-faiss-cpu==1.8.0.post1
+faiss-cpu
     # via -r requirements.in
 filelock==3.13.3
     # via
@@ -52,7 +52,7 @@ multidict==6.0.5
     #   yarl
 multiprocess==0.70.16
     # via datasets
-numpy==1.26.4
+
     # via
     #   -r requirements.in
     #   contourpy
@@ -60,14 +60,15 @@ numpy==1.26.4
     #   faiss-cpu
     #   pandas
     #   pyarrow
-opencv-python==4.8.0.76
+numpy
+opencv-python
 
 packaging==24.1
     # via
     #   datasets
     #   faiss-cpu
     #   huggingface-hub
-pandas==2.0.3
+pandas
     # via datasets
 pyarrow==16.1.0
     # via datasets
@@ -95,7 +96,7 @@ typing-extensions==4.10.0
     # via huggingface-hub
 tzdata==2023.3
     # via pandas
-tensorflow==2.13.0  
+tensorflow
 urllib3==2.2.1
     # via requests
 xxhash==3.4.1
