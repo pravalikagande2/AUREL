@@ -14,10 +14,12 @@ import torch
 from sklearn.metrics.pairwise import euclidean_distances
 
 from dotenv import load_dotenv
-import os
 
 # Load environment variables from .env file
 load_dotenv()
+
+# Initialize Flask app
+app = Flask(__name__)
 
 # Access environment variables
 FLASK_SECRET_KEY = os.getenv("FLASK_SECRET_KEY")
@@ -26,9 +28,6 @@ UPLOAD_FOLDER = os.getenv("UPLOAD_FOLDER")
 # Use the loaded environment variables in your app
 app.config["SECRET_KEY"] = FLASK_SECRET_KEY
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
-
-# Initialize Flask app
-app = Flask(__name__)
 
 # 1. Kaggle Dataset Setup
 def download_kaggle_dataset():
@@ -173,4 +172,6 @@ def find_similar():
 
 # Start the Flask app
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    # Bind to the port provided by Render
+    port = int(os.getenv("PORT", 5000))  # Default to 5000 if not provided
+    app.run(host="0.0.0.0", port=port)
