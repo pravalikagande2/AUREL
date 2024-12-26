@@ -60,15 +60,15 @@ multiprocess==0.70.16
     #   faiss-cpu
     #   pandas
     #   pyarrow
-numpy
-opencv-python
+
+
 
 packaging==24.1
     # via
     #   datasets
     #   faiss-cpu
     #   huggingface-hub
-pandas
+
     # via datasets
 pyarrow==16.1.0
     # via datasets
@@ -96,10 +96,18 @@ typing-extensions==4.10.0
     # via huggingface-hub
 tzdata==2023.3
     # via pandas
-tensorflow
+
 urllib3==2.2.1
     # via requests
 xxhash==3.4.1
     # via datasets
 yarl==1.9.4
     # via aiohttp
+Flask==2.2.2
+tensorflow==2.13.0
+scikit-learn==1.2.2
+opencv-python==4.8.0.76
+numpy==1.24.3
+torch==1.13.1
+python-dotenv==1.0.0
+pandas
